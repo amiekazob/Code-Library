@@ -9,7 +9,7 @@ bitset<MAX>primes;
 void bitsetSieve() {
   primes.set();
   primes[0] = primes[1] = 0;
-  for (ll i = 2; i <= MAX; i+=2) {
+  for (ll i = 2; i <= MAX; i++) {
     if (primes[i]) {
       for ( ll j = i*i ; j <= MAX; j += i) {
         primes[j] = 0;
